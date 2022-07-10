@@ -1,4 +1,4 @@
-package com.bootcamp.application.dao.model;
+package com.bootcamp.application.main.dao.model;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
@@ -18,7 +18,11 @@ public class Transaction {
 
     @BsonId
     @JsonSerialize(using = ToStringSerializer.class)
-    private List<ObjectId> id;
+    private ObjectId id;
+
+    @BsonId
+    @JsonSerialize(using = ToStringSerializer.class)
+    private List<ObjectId> clientId;
 
     @BsonId
     @JsonSerialize(using = ToStringSerializer.class)

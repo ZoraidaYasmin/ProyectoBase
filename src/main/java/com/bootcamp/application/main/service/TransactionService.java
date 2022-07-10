@@ -1,6 +1,6 @@
-package com.bootcamp.application.service;
+package com.bootcamp.application.main.service;
 
-import com.bootcamp.application.dao.model.Transaction;
+import com.bootcamp.application.main.dao.model.Transaction;
 import org.bson.types.ObjectId;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

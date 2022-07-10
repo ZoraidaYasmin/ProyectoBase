@@ -1,6 +1,6 @@
-package com.bootcamp.application.dao.repository;
+package com.bootcamp.application.main.dao.repository;
 
-import com.bootcamp.application.dao.model.Transaction;
+import com.bootcamp.application.main.dao.model.Transaction;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 

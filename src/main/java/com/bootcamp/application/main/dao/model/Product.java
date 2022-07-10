@@ -1,4 +1,4 @@
-package com.bootcamp.application.dao.model;
+package com.bootcamp.application.main.dao.model;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
@@ -7,19 +7,19 @@ import org.bson.codecs.pojo.annotations.BsonId;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "client")
+
 @Data
-public class Client {
+@Document(collection = "product")
+public class Product {
 
     @BsonId
     @JsonSerialize(using = ToStringSerializer.class)
     private ObjectId id;
 
-    private String name;
-    private String lastName;
-    private String dni;
-    private String customerType;
-    private String customerTypeDes;
+    private String productType;
+    private String productTypeDes;
+    private String productInd;
+    private String productIndDes;
     private Audit audit;
 
 }

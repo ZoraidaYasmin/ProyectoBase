@@ -1,4 +1,4 @@
-package com.bootcamp.application.dao.model;
+package com.bootcamp.application.main.dao.model;
 
 import lombok.Data;
 
